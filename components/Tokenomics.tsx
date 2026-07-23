@@ -1,336 +1,371 @@
 export default function Tokenomics() {
   const allocations = [
     {
-      icon: "🌍",
-      title: "Community Rewards",
-      percentage: "45%",
-      amount: "450,000,000 PULSE",
-      description:
-        "Dedicated to rewarding community participation, ecosystem growth, environmental campaigns, and future community-driven initiatives.",
-    },
-    {
-      icon: "💧",
-      title: "Liquidity",
+      name: "Liquidity Pool",
       percentage: "25%",
       amount: "250,000,000 PULSE",
-      description:
-        "Reserved to provide healthy market liquidity, improve trading accessibility, and support a stable ecosystem.",
+      color: "bg-blue-500",
+      purpose: "Trading liquidity and market stability at launch",
     },
     {
-      icon: "🚀",
-      title: "Marketing & Growth",
-      percentage: "15%",
-      amount: "150,000,000 PULSE",
-      description:
-        "Used for global awareness campaigns, partnerships, social media growth, influencer collaborations, and community expansion.",
-    },
-    {
-      icon: "🌱",
-      title: "Development",
+      name: "Community Launch",
       percentage: "10%",
       amount: "100,000,000 PULSE",
-      description:
-        "Supports website development, ecosystem improvements, technology upgrades, and future EarthPulse features.",
+      color: "bg-green-500",
+      purpose: "Public community participation and early supporters",
     },
     {
-      icon: "🏦",
-      title: "Treasury",
-      percentage: "5%",
-      amount: "50,000,000 PULSE",
-      description:
-        "Reserved for strategic opportunities, operational sustainability, and long-term ecosystem development.",
+      name: "Ecosystem Rewards",
+      percentage: "35%",
+      amount: "350,000,000 PULSE",
+      color: "bg-emerald-500",
+      purpose:
+        "Community rewards, campaigns, environmental programs, and future ecosystem growth",
+    },
+    {
+      name: "Team Development",
+      percentage: "10%",
+      amount: "100,000,000 PULSE",
+      color: "bg-purple-500",
+      purpose:
+        "Core development, technology, security, and long-term project building",
+    },
+    {
+      name: "Marketing Growth",
+      percentage: "10%",
+      amount: "100,000,000 PULSE",
+      color: "bg-pink-500",
+      purpose:
+        "Marketing campaigns, partnerships, and community expansion",
+    },
+    {
+      name: "Treasury Reserve",
+      percentage: "10%",
+      amount: "100,000,000 PULSE",
+      color: "bg-yellow-500",
+      purpose:
+        "Strategic reserve, partnerships, and future ecosystem needs",
     },
   ];
 
-  const utilities = [
-    "🗳️ Community Governance & Voting",
-    "🎨 NFT Collectibles",
-    "👕 EarthPulse Merchandise",
-    "🌎 Environmental Education Campaigns",
-    "🔥 Climate & Sustainability Challenges",
-    "🤝 Future Environmental Partnerships",
-    "❤️ Donation Initiatives",
+
+  const vesting = [
+    {
+      title: "Team Development",
+      lock: "10% available at launch (10,000,000 PULSE)",
+      release: "Remaining 90% vested linearly over 24 months",
+    },
+    {
+      title: "Marketing Growth",
+      lock: "20% available at launch (20,000,000 PULSE)",
+      release: "Remaining 80% vested linearly over 12 months",
+    },
+    {
+      title: "Ecosystem Rewards",
+      lock: "10% initial distribution available (35,000,000 PULSE)",
+      release:
+        "Remaining rewards released gradually through community programs and environmental initiatives",
+    },
+    {
+      title: "Treasury Reserve",
+      lock: "Locked at launch (0% circulating)",
+      release:
+        "Released only for strategic partnerships, ecosystem expansion, and approved development needs",
+    },
   ];
+
 
   return (
     <section
       id="tokenomics"
-      className="bg-black/40 px-6 py-24"
+      className="
+      bg-black/40
+      px-6
+      py-24
+      text-white
+      "
     >
 
       <div className="mx-auto max-w-6xl">
 
-        {/* TITLE */}
 
-        <h2
-          className="
-          text-center
-          text-5xl
-          font-bold
-          text-green-400
-          "
-        >
-          Tokenomics
+        <h2 className="
+        text-center
+        text-5xl
+        font-bold
+        text-green-400
+        ">
+          EarthPulse Tokenomics
         </h2>
 
 
-        <p
-          className="
-          mx-auto
-          mt-6
-          max-w-3xl
-          text-center
-          text-xl
-          text-gray-300
-          "
-        >
-          EarthPulse ($PULSE) is designed with a transparent,
-          community-focused token structure built to support long-term
-          ecosystem growth and environmental impact.
+        <p className="
+        mx-auto
+        mt-6
+        max-w-3xl
+        text-center
+        text-gray-300
+        ">
+          EarthPulse is designed with long-term sustainability,
+          transparency, and community growth at its foundation.
         </p>
 
 
+        {/* Supply */}
 
-        {/* SUPPLY CARD */}
+        <div className="
+        mt-12
+        rounded-2xl
+        border
+        border-green-500/30
+        bg-black/50
+        p-8
+        text-center
+        ">
 
-        <div className="mt-12 flex justify-center">
+          <h3 className="text-2xl font-bold">
+            Total Supply
+          </h3>
 
-          <div
-            className="
-            w-full
-            max-w-xl
-            rounded-3xl
-            border
-            border-green-700
-            bg-green-500/10
-            p-10
-            text-center
-            shadow-lg
-            "
-          >
-
-            <h3 className="text-2xl font-bold text-green-400">
-              Total Maximum Supply
-            </h3>
-
-
-            <p
-              className="
-              mt-4
-              text-6xl
-              font-black
-              text-white
-              "
-            >
-              1,000,000,000
-            </p>
-
-
-            <p
-              className="
-              mt-3
-              text-xl
-              text-green-300
-              "
-            >
-              $PULSE Tokens
-            </p>
-
-          </div>
+          <p className="
+          mt-3
+          text-4xl
+          font-bold
+          text-green-400
+          ">
+            1,000,000,000 PULSE
+          </p>
 
         </div>
 
 
 
-        {/* ALLOCATION CARDS */}
+        {/* Allocation */}
 
-        <div
-          className="
-          mt-16
-          grid
-          gap-8
-          sm:grid-cols-2
-          lg:grid-cols-3
-          "
-        >
+        <h3 className="
+        mt-16
+        text-3xl
+        font-bold
+        ">
+          Token Allocation
+        </h3>
+
+
+        <div className="mt-8 space-y-6">
 
           {allocations.map((item) => (
 
-            <TokenCard
-              key={item.title}
-              {...item}
-            />
+            <div
+            key={item.name}
+            className="
+            rounded-xl
+            bg-white/5
+            p-5
+            "
+            >
+
+              <div className="
+              flex
+              justify-between
+              ">
+
+                <h4 className="font-bold">
+                  {item.name}
+                </h4>
+
+                <span className="
+                text-green-400
+                font-bold
+                ">
+                  {item.percentage}
+                </span>
+
+              </div>
+
+
+              <div className="
+              mt-3
+              h-3
+              rounded-full
+              bg-gray-800
+              ">
+
+                <div
+                className={`
+                h-3
+                rounded-full
+                ${item.color}
+                `}
+                style={{
+                  width:item.percentage
+                }}
+                />
+
+              </div>
+
+
+              <p className="mt-3 text-gray-300">
+                {item.amount}
+              </p>
+
+
+              <p className="text-sm text-gray-400">
+                {item.purpose}
+              </p>
+
+
+            </div>
 
           ))}
 
         </div>
 
+                {/* Vesting */}
+
+        <h3 className="
+        mt-20
+        text-3xl
+        font-bold
+        ">
+          Vesting Timeline
+        </h3>
 
 
-        {/* UTILITY SECTION */}
+        <div className="
+        mt-8
+        grid
+        gap-6
+        md:grid-cols-2
+        ">
 
-        <div className="mt-24">
-
-          <h2
-            className="
-            text-center
-            text-4xl
-            font-bold
-            text-green-400
-            "
-          >
-            Future Ecosystem Utility
-          </h2>
-
-
-          <p
-            className="
-            mx-auto
-            mt-5
-            max-w-3xl
-            text-center
-            text-gray-300
-            "
-          >
-            EarthPulse aims to expand beyond a meme token by building
-            community-powered initiatives focused on environmental awareness
-            and global participation.
-          </p>
-
-
+        {vesting.map((item)=>(
 
           <div
-            className="
-            mt-10
-            grid
-            gap-5
-            sm:grid-cols-2
-            lg:grid-cols-3
-            "
+          key={item.title}
+          className="
+          rounded-xl
+          border
+          border-green-500/20
+          bg-black/40
+          p-6
+          "
           >
 
-            {utilities.map((utility)=>(
+            <h4 className="
+            text-xl
+            font-bold
+            text-green-400
+            ">
+              {item.title}
+            </h4>
 
-              <div
-                key={utility}
-                className="
-                rounded-xl
-                border
-                border-green-900
-                bg-black/50
-                p-5
-                text-center
-                text-lg
-                text-gray-200
-                hover:border-green-400
-                transition
-                "
-              >
-                {utility}
-              </div>
+            <p className="mt-3 text-gray-300">
+              🔒 {item.lock}
+            </p>
 
-            ))}
+            <p className="text-gray-300">
+              📅 {item.release}
+            </p>
 
+
+          </div>
+
+        ))}
+
+        </div>
+
+
+
+        {/* Wallet Transparency */}
+
+        <div className="
+        mt-20
+        rounded-2xl
+        border
+        border-green-500/30
+        bg-black/60
+        p-8
+        ">
+
+
+        <h3 className="
+        text-3xl
+        font-bold
+        text-green-400
+        ">
+          Wallet Transparency
+        </h3>
+
+
+        <p className="
+        mt-4
+        text-gray-300
+        ">
+        EarthPulse maintains publicly visible wallets
+        to ensure accountability and community trust.
+        </p>
+
+
+        <div className="mt-6 space-y-4">
+
+
+          <div>
+            💧 Liquidity Wallet
+            <p className="text-gray-500">
+            Public address revealed after launch
+            </p>
+          </div>
+
+
+          <div>
+            🌍 Community Launch Wallet
+            <p className="text-gray-500">
+            Supports fair community participation and early supporters
+            </p>
+          </div>
+
+
+          <div>
+            🛠 Development Wallet
+            <p className="text-gray-500">
+            10% available at launch, remaining tokens vested over 24 months
+            </p>
+          </div>
+
+
+          <div>
+            📢 Marketing Wallet
+            <p className="text-gray-500">
+            20% available at launch, remaining tokens vested over 12 months
+            </p>
+          </div>
+
+
+          <div>
+            🎁 Ecosystem Rewards Wallet
+            <p className="text-gray-500">
+            Supports community rewards, campaigns, and environmental programs
+            </p>
+          </div>
+
+
+          <div>
+            🏦 Treasury Wallet
+            <p className="text-gray-500">
+            Reserved for partnerships and future ecosystem expansion
+            </p>
           </div>
 
 
         </div>
+
+
+        </div>
+
 
 
       </div>
 
     </section>
   );
-}
-
-
-
-
-
-function TokenCard({
-  icon,
-  title,
-  percentage,
-  amount,
-  description,
-}: {
-  icon:string;
-  title:string;
-  percentage:string;
-  amount:string;
-  description:string;
-}) {
-
-
-return (
-
-<div
-className="
-rounded-2xl
-border
-border-green-800
-bg-black/40
-p-8
-transition
-hover:border-green-400
-hover:-translate-y-1
-"
->
-
-
-<div className="text-5xl">
-{icon}
-</div>
-
-
-<h3
-className="
-mt-5
-text-2xl
-font-bold
-text-green-400
-"
->
-{title}
-</h3>
-
-
-<p
-className="
-mt-3
-text-5xl
-font-extrabold
-text-white
-"
->
-{percentage}
-</p>
-
-
-<p
-className="
-mt-2
-font-semibold
-text-green-300
-"
->
-{amount}
-</p>
-
-
-<p
-className="
-mt-5
-leading-7
-text-gray-300
-"
->
-{description}
-</p>
-
-
-</div>
-
-);
-
 }
