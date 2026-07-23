@@ -49,6 +49,15 @@ export const metadata: Metadata = {
 
     siteName: "EarthPulse",
 
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "EarthPulse | One Planet. One Pulse. One Community.",
+      },
+    ],
+
   },
 
 
@@ -61,6 +70,10 @@ export const metadata: Metadata = {
 
     description:
       "Join the EarthPulse community and help build a greener future through Web3 culture.",
+
+    images: [
+      "/opengraph-image.png",
+    ],
 
   },
 
