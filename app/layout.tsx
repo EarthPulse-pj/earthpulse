@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
 
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://earthpulse-jade.vercel.app"),
 
   title:
     "EarthPulse | One Planet. One Pulse. One Community.",
@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "Web3",
     "environment",
     "sustainability",
+    "green crypto",
+    "community token",
   ],
 
   authors: [
@@ -30,7 +32,6 @@ export const metadata: Metadata = {
   ],
 
   creator: "EarthPulse",
-
 
   openGraph: {
 
@@ -43,6 +44,10 @@ export const metadata: Metadata = {
     type: "website",
 
     locale: "en_US",
+
+    url: "https://earthpulse-jade.vercel.app",
+
+    siteName: "EarthPulse",
 
   },
 
