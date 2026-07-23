@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+
+/* EarthPulse Global Styles */
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Better text rendering */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Smooth image handling */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* Selection color */
+
+::selection {
+  background-color: #22c55e;
+  color: black;
+}
