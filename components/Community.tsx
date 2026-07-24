@@ -12,31 +12,33 @@ import {
 export default function Community() {
 
   const communities = [
-    {
-      icon: "𝕏",
-      title: "X (Twitter)",
-      description:
-        "Follow EarthPulse updates, announcements, memes, and community discussions.",
-      button: "Follow X",
-    },
+  {
+    icon: "𝕏",
+    title: "X (Twitter)",
+    description:
+      "Follow EarthPulse updates, announcements, memes, and community discussions.",
+    button: "Follow X",
+    link: "https://x.com/Earthpulsemain",
+  },
 
-    {
-      icon: "💬",
-      title: "Discord",
-      description:
-        "Join our community hub, connect with supporters, and share ideas.",
-      button: "Join Discord",
-    },
+  {
+    icon: "💬",
+    title: "Discord",
+    description:
+      "Join our community hub, connect with supporters, and share ideas.",
+    button: "Join Discord",
+    link: "#",
+  },
 
-    {
-      icon: "📱",
-      title: "Telegram",
-      description:
-        "Stay connected with the EarthPulse community through real-time updates.",
-      button: "Join Telegram",
-    },
-
-  ];
+  {
+    icon: "📱",
+    title: "Telegram",
+    description:
+      "Stay connected with the EarthPulse community through real-time updates.",
+    button: "Join Telegram",
+    link: "#",
+  },
+];
 
 
 
@@ -144,21 +146,25 @@ export default function Community() {
 
 
 
-                <button
-                  className="
-                    mt-6
-                    rounded-xl
-                    bg-green-500
-                    px-6
-                    py-3
-                    font-bold
-                    text-black
-                    transition
-                    hover:bg-green-400
-                  "
-                >
-                  {community.button}
-                </button>
+              <a
+  href={community.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    mt-6
+    inline-block
+    rounded-xl
+    bg-green-500
+    px-6
+    py-3
+    font-bold
+    text-black
+    transition
+    hover:bg-green-400
+  "
+>
+  {community.button}
+</a>
 
 
 
