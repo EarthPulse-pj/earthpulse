@@ -120,7 +120,7 @@ export default function Footer() {
 
 
               <a
-                href="https://x.com/@Earthpulsemain"
+                href="https://x.com/Earthpulsemain"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
