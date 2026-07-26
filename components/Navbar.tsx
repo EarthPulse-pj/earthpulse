@@ -86,13 +86,13 @@ export default function Navbar() {
 
             alt="NovaGaia Logo"
 
-            width={45}
+            width={72}
 
-            height={45}
+            height={72}
 
             style={{
-              width: "45px",
-              height: "45px",
+              width: "72px",
+              height: "72px",
               objectFit: "contain",
             }}
 
