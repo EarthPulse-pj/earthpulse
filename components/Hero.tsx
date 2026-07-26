@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 
 
 export default function Hero() {
+
+
   return (
+
+
     <section
       id="home"
       className="
@@ -16,6 +20,7 @@ export default function Hero() {
       py-24
       "
     >
+
 
       <div
         className="
@@ -29,28 +34,37 @@ export default function Hero() {
       >
 
 
+
+
+
         {/* LEFT CONTENT */}
+
+
 
         <motion.div
 
+
           initial={{
-            opacity: 0,
-            x: -50,
+            opacity:0,
+            x:-50,
           }}
+
 
           animate={{
-            opacity: 1,
-            x: 0,
+            opacity:1,
+            x:0,
           }}
 
+
           transition={{
-            duration: 0.8,
+            duration:0.8,
           }}
+
 
         >
 
 
-          {/* Launch Badge */}
+
 
           <p
             className="
@@ -58,40 +72,43 @@ export default function Hero() {
             inline-block
             rounded-full
             border
-            border-green-500
-            bg-green-500/10
+            border-cyan-400
+            bg-cyan-400/10
             px-5
             py-2
             text-sm
-            text-green-300
+            text-cyan-300
             "
           >
-            🌱 Launching Soon
+
+            🤖 Building A Smarter Future With AI & Blockchain
+
           </p>
 
 
 
 
 
-          {/* Main Title */}
 
           <h1
             className="
             text-5xl
             font-extrabold
-            text-green-400
+            text-emerald-400
             sm:text-6xl
             md:text-7xl
             "
           >
-            EarthPulse
+
+            NovaGaia
+
           </h1>
 
 
 
 
 
-          {/* Tagline */}
+
 
           <h2
             className="
@@ -102,7 +119,9 @@ export default function Hero() {
             sm:text-3xl
             "
           >
-            One Planet. One Pulse. One Community.
+
+            One Planet. One Intelligence. One Community.
+
           </h2>
 
 
@@ -110,7 +129,6 @@ export default function Hero() {
 
 
 
-          {/* Description */}
 
           <p
             className="
@@ -119,14 +137,13 @@ export default function Hero() {
             text-lg
             leading-8
             text-gray-300
-            sm:text-xl
             "
           >
 
-            A community-powered meme coin created to inspire environmental
-            awareness, sustainability, and positive global action.
-
-            Together, we protect our planet and build a greener future.
+            NovaGaia (NVGAI) is a global community exploring
+            Artificial Intelligence, Blockchain Technology,
+            Collective Intelligence, and sustainable innovation
+            to help build a smarter, safer, and more connected future.
 
           </p>
 
@@ -135,8 +152,6 @@ export default function Hero() {
 
 
 
-
-          {/* BUTTONS */}
 
           <div
             className="
@@ -149,25 +164,27 @@ export default function Hero() {
           >
 
 
-            {/* Whitepaper Button */}
+
 
             <a
-              href="/EarthPulse-Whitepaper-v1.0.pdf"
+              href="/NovaGaia-Whitepaper-v1.0.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="
               rounded-xl
-              bg-green-500
+              bg-emerald-400
               px-8
               py-4
               text-center
               font-bold
               text-black
               transition
-              hover:bg-green-400
+              hover:bg-emerald-300
               "
             >
+
               📄 View Whitepaper
+
             </a>
 
 
@@ -175,24 +192,28 @@ export default function Hero() {
 
 
 
-            {/* Community Button */}
 
             <a
               href="#community"
               className="
               rounded-xl
               border
-              border-green-400
+              border-cyan-400
               px-8
               py-4
               text-center
               text-white
               transition
-              hover:bg-green-900
+              hover:bg-cyan-900/40
               "
             >
-              🌍 Join Community
+
+              🌐 Join Community
+
             </a>
+
+
+
 
 
           </div>
@@ -207,6 +228,8 @@ export default function Hero() {
 
           {/* Statistics */}
 
+
+
           <div
             className="
             mt-12
@@ -217,25 +240,33 @@ export default function Hero() {
             "
           >
 
-            <StatCard
-              title="PULSE"
-              text="Token"
-            />
+
 
 
             <StatCard
-              title="🌎"
-              text="Global Mission"
+              title="NVGAI"
+              text="Solana Token"
             />
+
 
 
             <StatCard
-              title="100%"
-              text="Community Driven"
+              title="🤖 AI"
+              text="Future Innovation"
             />
+
+
+
+            <StatCard
+              title="🌍"
+              text="Global Community"
+            />
+
 
 
           </div>
+
+
 
 
 
@@ -252,21 +283,29 @@ export default function Hero() {
         {/* RIGHT SIDE MASCOT */}
 
 
+
+
+
         <motion.div
 
+
           initial={{
-            opacity: 0,
-            scale: 0.8,
+            opacity:0,
+            scale:0.8,
           }}
+
 
           animate={{
-            opacity: 1,
-            scale: 1,
+            opacity:1,
+            scale:1,
           }}
 
+
           transition={{
-            duration: 0.8,
+            duration:0.8,
           }}
+
+
 
           className="
           flex
@@ -276,31 +315,45 @@ export default function Hero() {
         >
 
 
+
+
+
           <Image
 
-            src="/pulse-final.png"
 
-            alt="EarthPulse Mascot"
+            src="/nova-mascot.png"
+
+
+            alt="NovaGaia Nova Mascot"
+
 
             width={500}
 
+
             height={500}
+
 
             priority
 
-            loading="eager"
+
 
             className="
             w-full
             max-w-sm
-            drop-shadow-[0_0_50px_rgba(34,197,94,0.6)]
+            drop-shadow-[0_0_50px_rgba(34,211,238,0.6)]
             sm:max-w-md
             "
+
 
           />
 
 
+
+
+
         </motion.div>
+
+
 
 
 
@@ -308,7 +361,11 @@ export default function Hero() {
 
 
     </section>
+
+
   );
+
+
 }
 
 
@@ -318,36 +375,55 @@ export default function Hero() {
 
 
 function StatCard({
+
   title,
+
   text,
+
+
 }: {
-  title: string;
-  text: string;
+
+
+  title:string;
+
+  text:string;
+
+
 }) {
+
 
 
   return (
 
+
     <div
+
       className="
       rounded-xl
       border
-      border-green-800
+      border-emerald-800
       bg-black/40
       p-5
       text-center
       "
+
     >
+
+
 
       <h3
         className="
         text-2xl
         font-bold
-        text-green-400
+        text-emerald-400
         "
       >
+
         {title}
+
       </h3>
+
+
 
 
       <p
@@ -356,11 +432,18 @@ function StatCard({
         text-gray-300
         "
       >
+
         {text}
+
       </p>
+
+
 
 
     </div>
 
+
   );
+
+
 }

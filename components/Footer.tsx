@@ -10,30 +10,60 @@ import {
 
 
 export default function Footer() {
+
   return (
-    <footer className="border-t border-green-900 bg-black px-8 py-16">
+
+    <footer
+      className="
+      border-t
+      border-emerald-900
+      bg-black
+      px-8
+      py-16
+      "
+    >
 
       <div className="mx-auto max-w-7xl">
 
 
         {/* Main Footer */}
-        <div className="grid gap-12 md:grid-cols-3">
+
+        <div
+          className="
+          grid
+          gap-12
+          md:grid-cols-3
+          "
+        >
+
 
 
           {/* Brand */}
+
           <div>
 
-            <h2 className="text-4xl font-extrabold text-green-400">
-              EarthPulse 🌎
+            <h2
+              className="
+              text-4xl
+              font-extrabold
+              text-emerald-400
+              "
+            >
+              NovaGaia 🤖🌍
             </h2>
 
 
-            <p className="mt-5 max-w-sm text-gray-400">
-              A community-powered meme coin created to inspire
-              environmental awareness, sustainability, and a greener
-              future through Web3 innovation.
+            <p
+              className="
+              mt-5
+              max-w-sm
+              text-gray-400
+              "
+            >
+              A community-driven cryptocurrency project exploring
+              Artificial Intelligence, Blockchain Technology,
+              Collective Intelligence, and sustainable innovation.
             </p>
-
 
           </div>
 
@@ -41,23 +71,36 @@ export default function Footer() {
 
 
 
+
           {/* Navigation */}
+
           <div>
 
-            <h3 className="text-xl font-bold text-green-400">
+            <h3
+              className="
+              text-xl
+              font-bold
+              text-emerald-400
+              "
+            >
               Explore
             </h3>
 
 
-            <ul className="mt-5 space-y-3 text-gray-300">
-
+            <ul
+              className="
+              mt-5
+              space-y-3
+              text-gray-300
+              "
+            >
 
               <li>
                 <a
                   href="#about"
-                  className="transition hover:text-green-400"
+                  className="transition hover:text-emerald-400"
                 >
-                  About
+                  About NovaGaia
                 </a>
               </li>
 
@@ -65,7 +108,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#tokenomics"
-                  className="transition hover:text-green-400"
+                  className="transition hover:text-emerald-400"
                 >
                   Tokenomics
                 </a>
@@ -75,7 +118,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#roadmap"
-                  className="transition hover:text-green-400"
+                  className="transition hover:text-emerald-400"
                 >
                   Roadmap
                 </a>
@@ -85,7 +128,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#community"
-                  className="transition hover:text-green-400"
+                  className="transition hover:text-emerald-400"
                 >
                   Community
                 </a>
@@ -102,150 +145,71 @@ export default function Footer() {
 
 
 
-          {/* Social */}
+
+
+          {/* Social Media */}
+
+
           <div>
 
-            <h3 className="text-xl font-bold text-green-400">
-              Join EarthPulse
+            <h3
+              className="
+              text-xl
+              font-bold
+              text-emerald-400
+              "
+            >
+              Join NovaGaia
             </h3>
 
 
-            <p className="mt-5 text-gray-400">
-              Follow our journey and become part of the movement.
+
+            <p
+              className="
+              mt-5
+              text-gray-400
+              "
+            >
+              Connect with our global community and help build
+              the future of AI, blockchain, and innovation.
             </p>
 
 
 
-            <div className="mt-6 flex flex-wrap gap-4">
+
+            <div
+              className="
+              mt-6
+              flex
+              flex-wrap
+              gap-4
+              "
+            >
 
 
-              <a
-                href="https://x.com/Earthpulsemain"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                flex
-                h-12
-                w-12
-                items-center
-                justify-center
-                rounded-xl
-                border
-                border-green-700
-                text-xl
-                text-green-400
-                transition
-                hover:bg-green-900
-                "
-              >
+              <SocialIcon href="https://x.com/Earthpulsemain">
                 <FaXTwitter />
-              </a>
+              </SocialIcon>
 
 
-
-
-
-              <a
-                href="https://discord.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                flex
-                h-12
-                w-12
-                items-center
-                justify-center
-                rounded-xl
-                border
-                border-green-700
-                text-xl
-                text-green-400
-                transition
-                hover:bg-green-900
-                "
-              >
+              <SocialIcon href="#">
                 <FaDiscord />
-              </a>
+              </SocialIcon>
 
 
-
-
-
-              <a
-                href="https://telegram.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                flex
-                h-12
-                w-12
-                items-center
-                justify-center
-                rounded-xl
-                border
-                border-green-700
-                text-xl
-                text-green-400
-                transition
-                hover:bg-green-900
-                "
-              >
+              <SocialIcon href="#">
                 <FaTelegram />
-              </a>
+              </SocialIcon>
 
 
-
-
-
-              <a
-                href="https://facebook.com/YOUR_FACEBOOK"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                flex
-                h-12
-                w-12
-                items-center
-                justify-center
-                rounded-xl
-                border
-                border-green-700
-                text-xl
-                text-green-400
-                transition
-                hover:bg-green-900
-                "
-              >
+              <SocialIcon href="#">
                 <FaFacebook />
-              </a>
+              </SocialIcon>
 
 
-
-
-
-
-              <a
-                href="https://tiktok.com/@YOUR_TIKTOK"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                flex
-                h-12
-                w-12
-                items-center
-                justify-center
-                rounded-xl
-                border
-                border-green-700
-                text-xl
-                text-green-400
-                transition
-                hover:bg-green-900
-                "
-              >
+              <SocialIcon href="#">
                 <FaTiktok />
-              </a>
-
+              </SocialIcon>
 
 
             </div>
@@ -254,34 +218,109 @@ export default function Footer() {
           </div>
 
 
-
         </div>
 
 
 
 
 
-        {/* Bottom */}
-        <div className="mt-14 border-t border-green-900 pt-8 text-center">
 
 
-          <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} EarthPulse. All rights reserved.
+
+
+        {/* Bottom Section */}
+
+
+        <div
+          className="
+          mt-14
+          border-t
+          border-emerald-900
+          pt-8
+          text-center
+          "
+        >
+
+
+          <p
+            className="
+            text-sm
+            text-gray-500
+            "
+          >
+            © {new Date().getFullYear()} NovaGaia (NVGAI).
+            All rights reserved.
           </p>
 
 
-          <p className="mt-2 text-xs text-gray-600">
-            EarthPulse is a community project. Cryptocurrency involves
-            risks. Always do your own research.
+
+          <p
+            className="
+            mt-2
+            text-xs
+            text-gray-600
+            "
+          >
+            NovaGaia is a community-driven cryptocurrency project
+            created for education, participation, and technology
+            exploration. Cryptocurrency involves risks.
+            Always conduct your own research.
           </p>
 
 
         </div>
+
 
 
       </div>
 
 
     </footer>
+
   );
+
+}
+
+
+
+
+
+function SocialIcon({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+
+
+  return (
+
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+
+      className="
+      flex
+      h-12
+      w-12
+      items-center
+      justify-center
+      rounded-xl
+      border
+      border-emerald-700
+      text-xl
+      text-emerald-400
+      transition
+      hover:bg-emerald-900
+      "
+    >
+
+      {children}
+
+    </a>
+
+  );
+
 }

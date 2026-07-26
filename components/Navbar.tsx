@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
+
 
 export default function Navbar() {
 
@@ -12,18 +14,22 @@ export default function Navbar() {
       name: "Home",
       href: "#home",
     },
+
     {
       name: "About",
       href: "#about",
     },
+
     {
       name: "Tokenomics",
       href: "#tokenomics",
     },
+
     {
       name: "Roadmap",
       href: "#roadmap",
     },
+
     {
       name: "Community",
       href: "#community",
@@ -31,7 +37,9 @@ export default function Navbar() {
   ];
 
 
+
   return (
+
     <nav
       className="
       fixed
@@ -39,7 +47,7 @@ export default function Navbar() {
       z-50
       w-full
       border-b
-      border-green-900
+      border-emerald-900
       bg-black/70
       backdrop-blur-md
       "
@@ -59,23 +67,71 @@ export default function Navbar() {
       >
 
 
+
         {/* Logo */}
+
 
         <a
           href="#home"
           className="
-          text-2xl
-          font-extrabold
-          text-green-400
+          flex
+          items-center
+          gap-3
           "
         >
-          🌎 EarthPulse
+
+          <Image
+
+            src="/nova-logo.png"
+
+            alt="NovaGaia Logo"
+
+            width={45}
+
+            height={45}
+
+            style={{
+              width: "45px",
+              height: "45px",
+              objectFit: "contain",
+            }}
+
+            priority
+
+          />
+
+
+          <div
+            className="
+            text-2xl
+            font-extrabold
+            "
+          >
+
+            <span className="text-emerald-400">
+              NovaGaia
+            </span>
+
+
+            <span className="text-white">
+              {" "}
+              NVGAI
+            </span>
+
+
+          </div>
+
+
         </a>
 
 
 
 
-        {/* Desktop Menu */}
+
+
+
+        {/* Desktop Navigation */}
+
 
         <div
           className="
@@ -86,38 +142,61 @@ export default function Navbar() {
           "
         >
 
-          {links.map((link) => (
+
+
+          {links.map((link)=>(
 
             <a
+
               key={link.name}
+
               href={link.href}
+
               className="
               text-gray-300
               transition
-              hover:text-green-400
+              hover:text-emerald-400
               "
+
             >
+
               {link.name}
+
             </a>
 
           ))}
 
 
 
-          <button
+
+
+
+          {/* Buy Button */}
+
+
+          <a
+
+            href="#buy"
+
             className="
             rounded-xl
-            bg-green-500
+            bg-emerald-400
             px-5
             py-2
             font-bold
             text-black
             transition
-            hover:bg-green-400
+            hover:bg-emerald-300
             "
+
           >
-            Buy PULSE
-          </button>
+
+            🚀 Buy NVGAI
+
+          </a>
+
+
+
 
 
         </div>
@@ -126,18 +205,30 @@ export default function Navbar() {
 
 
 
-        {/* Mobile Button */}
+
+
+
+        {/* Mobile Menu Button */}
+
 
         <button
+
           onClick={() => setOpen(!open)}
+
+          aria-label="Toggle menu"
+
           className="
           text-3xl
-          text-green-400
+          text-emerald-400
           md:hidden
           "
+
         >
+
           ☰
+
         </button>
+
 
 
       </div>
@@ -147,37 +238,54 @@ export default function Navbar() {
 
 
 
+
+
+
       {/* Mobile Menu */}
+
+
 
       {open && (
 
         <div
+
           className="
           flex
           flex-col
           gap-5
           border-t
-          border-green-900
+          border-emerald-900
           bg-black
           px-6
           py-6
           md:hidden
           "
+
         >
 
 
-          {links.map((link) => (
+
+
+          {links.map((link)=>(
 
             <a
+
               key={link.name}
+
               href={link.href}
+
               onClick={() => setOpen(false)}
+
               className="
               text-gray-300
-              hover:text-green-400
+              transition
+              hover:text-emerald-400
               "
+
             >
+
               {link.name}
+
             </a>
 
           ))}
@@ -185,25 +293,46 @@ export default function Navbar() {
 
 
 
-          <button
+
+
+
+          {/* Mobile Buy Button */}
+
+
+          <a
+
+            href="#buy"
+
+            onClick={() => setOpen(false)}
+
             className="
             rounded-xl
-            bg-green-500
+            bg-emerald-400
             px-5
             py-3
+            text-center
             font-bold
             text-black
             "
+
           >
-            Buy EPULSE
-          </button>
+
+            🚀 Buy NVGAI
+
+          </a>
+
+
 
 
         </div>
 
+
       )}
 
 
+
     </nav>
+
   );
+
 }

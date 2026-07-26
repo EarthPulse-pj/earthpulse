@@ -1,5 +1,7 @@
 export default function About() {
+
   return (
+
     <section
       id="about"
       className="
@@ -7,26 +9,37 @@ export default function About() {
       py-24
       "
     >
+
+
       <div
         className="
         mx-auto
         max-w-6xl
         "
       >
-        {/* Title */}
+
+
+
+        {/* TITLE */}
+
 
         <h2
           className="
           text-center
           text-5xl
           font-bold
-          text-green-400
+          text-emerald-400
           "
         >
-          About EarthPulse
+          About NovaGaia
         </h2>
 
-        {/* Description */}
+
+
+
+
+        {/* INTRODUCTION */}
+
 
         <p
           className="
@@ -40,10 +53,17 @@ export default function About() {
           sm:text-xl
           "
         >
-          EarthPulse is a community-powered meme coin built on the Solana
-          blockchain with a mission to unite people through blockchain,
-          creativity, and environmental awareness.
+
+          NovaGaia is a community-driven ecosystem that combines
+          Artificial Intelligence, Blockchain Technology, and Collective
+          Intelligence to explore new ways of building a smarter,
+          safer, and more sustainable future.
+
         </p>
+
+
+
+
 
         <p
           className="
@@ -51,17 +71,26 @@ export default function About() {
           mt-6
           max-w-4xl
           text-center
-          text-gray-400
           leading-8
+          text-gray-400
           "
         >
-          Rather than promising unrealistic returns, EarthPulse focuses on
-          building a transparent, community-driven ecosystem where members can
-          participate, create, educate, and inspire positive change. Together,
-          we believe that one small pulse can create a global movement.
+
+          NovaGaia is built around the belief that technology should
+          empower people. Instead of focusing on unrealistic promises,
+          NovaGaia focuses on education, innovation, transparency,
+          and community participation through Web3 culture.
+
         </p>
 
-        {/* Cards */}
+
+
+
+
+
+
+        {/* CARDS */}
+
 
         <div
           className="
@@ -71,99 +100,149 @@ export default function About() {
           md:grid-cols-3
           "
         >
+
+
+
+
+
           {/* Vision */}
+
 
           <div
             className="
             rounded-2xl
             border
-            border-green-800
+            border-emerald-800
             bg-black/40
             p-8
             "
           >
-            <div className="text-5xl">🌎</div>
+
+            <div className="text-5xl">
+              🌍
+            </div>
+
 
             <h3
               className="
               mt-4
               text-2xl
               font-bold
-              text-green-400
+              text-emerald-400
               "
             >
               Vision
             </h3>
 
+
             <p
               className="
               mt-3
               text-gray-300
               "
             >
-              To become the world's most recognized environmental-themed meme
-              coin while inspiring positive global awareness.
+
+              Build a global community where AI,
+              blockchain, and human creativity work
+              together to create positive innovation.
+
             </p>
+
+
           </div>
 
+
+
+
+
+
+
+
+
           {/* Mission */}
+
 
           <div
             className="
             rounded-2xl
             border
-            border-green-800
+            border-emerald-800
             bg-black/40
             p-8
             "
           >
-            <div className="text-5xl">🌱</div>
+
+            <div className="text-5xl">
+              🤖
+            </div>
+
 
             <h3
               className="
               mt-4
               text-2xl
               font-bold
-              text-green-400
+              text-emerald-400
               "
             >
               Mission
             </h3>
 
+
             <p
               className="
               mt-3
               text-gray-300
               "
             >
-              Build a transparent community that combines blockchain,
-              sustainability, creativity, and education into one ecosystem.
+
+              Educate, connect, and inspire people
+              through responsible AI adoption,
+              blockchain awareness, and decentralized
+              community collaboration.
+
             </p>
+
+
           </div>
 
+
+
+
+
+
+
+
+
           {/* Community */}
+
 
           <div
             className="
             rounded-2xl
             border
-            border-green-800
+            border-emerald-800
             bg-black/40
             p-8
             "
           >
-            <div className="text-5xl">💚</div>
+
+            <div className="text-5xl">
+              🧠
+            </div>
+
 
             <h3
               className="
               mt-4
               text-2xl
               font-bold
-              text-green-400
+              text-emerald-400
               "
             >
-              Community
+              Collective Intelligence
             </h3>
+
 
             <p
               className="
@@ -171,12 +250,31 @@ export default function About() {
               text-gray-300
               "
             >
-              Every member is a Pulse Keeper. Together we build a positive,
-              transparent, and creative global community.
+
+              Every member contributes ideas,
+              creativity, and knowledge to help shape
+              the future direction of NovaGaia.
+
             </p>
+
+
           </div>
+
+
+
+
+
         </div>
+
+
+
+
+
       </div>
+
+
     </section>
+
   );
+
 }

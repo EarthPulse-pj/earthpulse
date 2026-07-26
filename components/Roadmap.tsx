@@ -1,206 +1,280 @@
 "use client";
 
-import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
+
 
 export default function Roadmap() {
 
+
   const phases = [
+
     {
       phase: "Phase 1",
       title: "Foundation & Launch",
       icon: "🌱",
       items: [
-        "EarthPulse website launch",
-        "Build social media communities",
-        "Release official whitepaper",
-        "Grow early supporters",
+        "Launch NovaGaia official website",
+        "Release NovaGaia whitepaper",
+        "Build X, Discord, and Telegram communities",
+        "Grow early NVGAI supporters",
+        "Introduce NovaGaia AI vision",
       ],
     },
+
 
     {
       phase: "Phase 2",
       title: "Community Growth",
       icon: "🌍",
       items: [
-        "Global community expansion",
-        "Marketing campaigns",
-        "Creator collaborations",
-        "Community events and rewards",
+        "Expand global NovaGaia community",
+        "Community campaigns and events",
+        "AI education initiatives",
+        "Creator and technology collaborations",
+        "Prepare community governance framework",
       ],
     },
+
 
     {
       phase: "Phase 3",
-      title: "Ecosystem Development",
-      icon: "🚀",
+      title: "AI & Blockchain Ecosystem",
+      icon: "🤖",
       items: [
-        "Token launch preparation",
-        "Future Web3 utilities",
-        "NFT collectible concepts",
-        "Environmental initiatives",
+        "Explore AI-powered community tools",
+        "Develop future Web3 utilities",
+        "Create NFT and digital identity concepts",
+        "Showcase AI innovation projects",
+        "Expand blockchain ecosystem opportunities",
       ],
     },
 
+
     {
       phase: "Phase 4",
-      title: "Global EarthPulse Vision",
-      icon: "🌎",
+      title: "Global Intelligence Network",
+      icon: "🚀",
       items: [
-        "Worldwide partnerships",
-        "Sustainability programs",
-        "Long-term ecosystem growth",
-        "Building a greener future",
+        "Build AI and blockchain partnerships",
+        "Support sustainable technology initiatives",
+        "Create global innovation programs",
+        "Grow decentralized ecosystem",
+        "Establish NovaGaia long-term vision",
       ],
     },
+
   ];
 
 
 
   return (
 
-    <ScrollReveal>
+    <section
+      id="roadmap"
+      className="
+      px-6
+      py-24
+      bg-black/40
+      "
+    >
 
-      <section
-        id="roadmap"
-        className="px-6 py-24 bg-black/40"
-      >
-
-        <div className="mx-auto max-w-6xl">
-
-
-          {/* Header */}
-
-          <h2 className="text-center text-5xl font-bold text-green-400">
-            Roadmap
-          </h2>
+      <div className="mx-auto max-w-6xl">
 
 
-          <p className="
-            mx-auto
-            mt-6
-            max-w-3xl
-            text-center
-            text-xl
-            text-gray-300
-          ">
-            The journey of EarthPulse from a community idea
-            into a global movement.
-          </p>
+        {/* HEADER */}
+
+        <h2
+          className="
+          text-center
+          text-5xl
+          font-bold
+          text-emerald-400
+          "
+        >
+          NovaGaia Roadmap
+        </h2>
 
 
 
+        <p
+          className="
+          mx-auto
+          mt-6
+          max-w-3xl
+          text-center
+          text-xl
+          text-gray-300
+          "
+        >
+          The journey of NovaGaia from a community vision
+          into a global AI and blockchain ecosystem.
+        </p>
 
 
-          {/* Roadmap Cards */}
-
-          <div className="
-            mt-16
-            grid
-            gap-8
-            md:grid-cols-2
-          ">
 
 
-            {phases.map((phase, index) => (
 
-              <motion.div
+        {/* ROADMAP CARDS */}
 
-                key={index}
 
-                whileHover={{
-                  y: -10,
-                }}
+        <div
+          className="
+          mt-16
+          grid
+          gap-8
+          md:grid-cols-2
+          "
+        >
 
-                transition={{
-                  duration: 0.3,
-                }}
 
+          {phases.map((phase,index)=>(
+
+
+            <motion.div
+
+              key={index}
+
+              whileHover={{
+                y:-10,
+              }}
+
+              transition={{
+                duration:0.3,
+              }}
+
+              className="
+              rounded-2xl
+              border
+              border-emerald-800
+              bg-emerald-500/10
+              p-8
+              "
+
+            >
+
+
+              <div
                 className="
-                  rounded-2xl
-                  border
-                  border-green-800
-                  bg-green-500/10
-                  p-8
+                flex
+                items-center
+                gap-5
                 "
-
               >
 
 
-                <div className="
-                  flex
-                  items-center
-                  gap-5
-                ">
-
-
-                  <div className="text-5xl">
-                    {phase.icon}
-                  </div>
+                <div className="text-5xl">
+                  {phase.icon}
+                </div>
 
 
 
-                  <div>
+                <div>
 
-                    <p className="text-green-300">
-                      {phase.phase}
-                    </p>
-
-
-                    <h3 className="
-                      text-2xl
-                      font-bold
-                      text-white
-                    ">
-                      {phase.title}
-                    </h3>
+                  <p className="text-cyan-300">
+                    {phase.phase}
+                  </p>
 
 
-                  </div>
+                  <h3
+                    className="
+                    text-2xl
+                    font-bold
+                    text-white
+                    "
+                  >
+                    {phase.title}
+                  </h3>
 
 
                 </div>
 
 
+              </div>
 
 
 
-                <ul className="
-                  mt-6
-                  space-y-3
-                  text-gray-300
-                ">
 
 
-                  {phase.items.map((item, i) => (
+              <ul
+                className="
+                mt-6
+                space-y-3
+                text-gray-300
+                "
+              >
 
-                    <li key={i}>
-                      ✓ {item}
-                    </li>
+                {phase.items.map((item,i)=>(
 
-                  ))}
+                  <li key={i}>
+                    ✓ {item}
+                  </li>
 
+                ))}
 
-                </ul>
-
-
-
-              </motion.div>
+              </ul>
 
 
-            ))}
+
+            </motion.div>
 
 
-          </div>
+          ))}
 
 
         </div>
 
 
-      </section>
 
 
-    </ScrollReveal>
+
+        {/* FINAL MESSAGE */}
+
+
+        <div
+          className="
+          mt-16
+          rounded-2xl
+          border
+          border-cyan-500/30
+          bg-black/50
+          p-8
+          text-center
+          "
+        >
+
+          <h3
+            className="
+            text-3xl
+            font-bold
+            text-emerald-400
+            "
+          >
+            One Planet. One Intelligence. One Community. 🌎
+          </h3>
+
+
+          <p
+            className="
+            mt-4
+            text-gray-300
+            "
+          >
+            NovaGaia grows together with the community by
+            combining AI, blockchain technology, and collective
+            intelligence to build the future.
+          </p>
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+
 
   );
+
 }

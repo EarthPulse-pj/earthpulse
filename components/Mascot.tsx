@@ -1,248 +1,366 @@
 "use client";
 
 import Image from "next/image";
-import ScrollReveal from "./ScrollReveal";
 import { motion } from "framer-motion";
 
-export default function Mascot() {
+
+export default function Hero() {
 
   return (
 
-    <ScrollReveal>
+    <section
+      id="home"
+      className="
+      min-h-screen
+      flex
+      items-center
+      px-6
+      py-24
+      "
+    >
 
-      <section
+      <div
         className="
-          px-6
-          py-24
-          bg-black/40
+        mx-auto
+        grid
+        max-w-7xl
+        items-center
+        gap-12
+        md:grid-cols-2
         "
       >
 
-        <div className="
-          mx-auto
-          grid
-          max-w-6xl
-          items-center
-          gap-12
-          md:grid-cols-2
-        ">
+
+        {/* LEFT CONTENT */}
+
+        <motion.div
+
+          initial={{
+            opacity:0,
+            x:-50,
+          }}
+
+          animate={{
+            opacity:1,
+            x:0,
+          }}
+
+          transition={{
+            duration:0.8,
+          }}
+
+        >
 
 
-          {/* Mascot Image */}
-
-          <motion.div
-
-            initial={{
-              opacity: 0,
-              scale: 0.8,
-            }}
-
-            whileInView={{
-              opacity: 1,
-              scale: 1,
-            }}
-
-            viewport={{
-              once: true,
-            }}
-
-            transition={{
-              duration: 0.8,
-            }}
-
+          <p
             className="
-              flex
-              justify-center
+            mb-5
+            inline-block
+            rounded-full
+            border
+            border-cyan-400
+            bg-cyan-400/10
+            px-5
+            py-2
+            text-sm
+            text-cyan-300
             "
+          >
+            🚀 Building The Future With AI & Blockchain
+          </p>
 
+
+
+
+          <h1
+            className="
+            text-5xl
+            font-extrabold
+            text-emerald-400
+            sm:text-6xl
+            md:text-7xl
+            "
+          >
+            NovaGaia
+          </h1>
+
+
+
+          <h2
+            className="
+            mt-4
+            text-2xl
+            font-semibold
+            text-white
+            sm:text-3xl
+            "
+          >
+            One Planet. One Intelligence. One Community.
+          </h2>
+
+
+
+
+          <p
+            className="
+            mt-6
+            max-w-xl
+            text-lg
+            leading-8
+            text-gray-300
+            "
           >
 
-            <div
+            NovaGaia is a global community combining
+            Artificial Intelligence, Blockchain Technology,
+            and Collective Intelligence to build a smarter,
+            safer, and more sustainable future.
+
+          </p>
+
+
+
+
+
+          <div
+            className="
+            mt-10
+            flex
+            flex-col
+            gap-4
+            sm:flex-row
+            "
+          >
+
+
+
+            <a
+              href="/NovaGaia-Whitepaper-v1.0.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="
-                rounded-full
-                bg-green-500/20
-                p-8
-                shadow-[0_0_80px_rgba(34,197,94,0.5)]
+              rounded-xl
+              bg-emerald-400
+              px-8
+              py-4
+              text-center
+              font-bold
+              text-black
+              transition
+              hover:bg-emerald-300
               "
             >
-
-              <Image
-                src="/pulse.png"
-                alt="EarthPulse Pulse Mascot"
-                width={450}
-                height={450}
-                className="
-                  drop-shadow-[0_0_40px_rgba(34,197,94,0.8)]
-                "
-              />
-
-            </div>
-
-
-          </motion.div>
+              📄 View Whitepaper
+            </a>
 
 
 
 
+            <a
+              href="#community"
+              className="
+              rounded-xl
+              border
+              border-cyan-400
+              px-8
+              py-4
+              text-center
+              text-white
+              transition
+              hover:bg-cyan-900/40
+              "
+            >
+              🌐 Join NovaGaia
+            </a>
 
 
-          {/* Text Side */}
+          </div>
 
-          <motion.div
 
-            initial={{
-              opacity:0,
-              x:50,
-            }}
 
-            whileInView={{
-              opacity:1,
-              x:0,
-            }}
 
-            viewport={{
-              once:true,
-            }}
 
-            transition={{
-              duration:0.8,
-            }}
+          <div
+            className="
+            mt-12
+            grid
+            grid-cols-1
+            gap-4
+            sm:grid-cols-3
+            "
+          >
 
+            <StatCard
+              title="NVGAI"
+              text="Solana Token"
+            />
+
+
+            <StatCard
+              title="🤖 AI"
+              text="Future Technology"
+            />
+
+
+            <StatCard
+              title="🌍"
+              text="Global Community"
+            />
+
+
+          </div>
+
+
+
+        </motion.div>
+
+
+
+
+
+
+
+
+
+        {/* RIGHT IMAGE */}
+
+
+        <motion.div
+
+          initial={{
+            opacity:0,
+            scale:0.8,
+          }}
+
+          animate={{
+            opacity:1,
+            scale:1,
+          }}
+
+          transition={{
+            duration:0.8,
+          }}
+
+          className="
+          flex
+          justify-center
+          "
+
+        >
+
+
+          <div
+            className="
+            relative
+            h-[400px]
+            w-[400px]
+            sm:h-[500px]
+            sm:w-[500px]
+            "
           >
 
 
-            <p className="
-              text-green-300
-              text-lg
-            ">
-              Meet Our Mascot
-            </p>
+            <Image
+
+              src="/nova-mascot.png"
+
+              alt="NovaGaia AI Mascot"
+
+              fill
+
+              priority
+
+              sizes="
+              (max-width:768px) 90vw,
+              500px
+              "
+
+              className="
+              object-contain
+              drop-shadow-[0_0_50px_rgba(34,211,238,0.5)]
+              "
+
+            />
+
+
+          </div>
 
 
 
-            <h2 className="
-              mt-3
-              text-5xl
-              font-extrabold
-              text-green-400
-            ">
-              Pulse 🌎
-            </h2>
+        </motion.div>
 
 
 
-            <p className="
-              mt-6
-              text-xl
-              leading-8
-              text-gray-300
-            ">
-
-              Pulse represents the heartbeat of our planet.
-              A symbol of hope, unity, and positive action
-              for a greener future.
-
-            </p>
+      </div>
 
 
-
-
-            <p className="
-              mt-6
-              text-gray-300
-            ">
-
-              Through EarthPulse, our mission is to bring
-              people together using Web3 technology,
-              creativity, and community power.
-
-            </p>
-
-
-
-
-            {/* Mission Cards */}
-
-            <div className="
-              mt-8
-              grid
-              gap-4
-              sm:grid-cols-2
-            ">
-
-
-              <div className="
-                rounded-xl
-                border
-                border-green-800
-                bg-green-500/10
-                p-5
-              ">
-
-                <h3 className="
-                  text-xl
-                  font-bold
-                  text-green-400
-                ">
-                  🌱 Protect Earth
-                </h3>
-
-
-                <p className="
-                  mt-2
-                  text-gray-300
-                ">
-                  Inspire environmental awareness.
-                </p>
-
-              </div>
-
-
-
-
-              <div className="
-                rounded-xl
-                border
-                border-green-800
-                bg-green-500/10
-                p-5
-              ">
-
-                <h3 className="
-                  text-xl
-                  font-bold
-                  text-green-400
-                ">
-                  🤝 Unite People
-                </h3>
-
-
-                <p className="
-                  mt-2
-                  text-gray-300
-                ">
-                  Build a global community.
-                </p>
-
-
-              </div>
-
-
-            </div>
-
-
-
-          </motion.div>
-
-
-
-        </div>
-
-
-      </section>
-
-
-    </ScrollReveal>
+    </section>
 
   );
+
+}
+
+
+
+
+
+function StatCard({
+
+  title,
+
+  text,
+
+}: {
+
+  title:string;
+
+  text:string;
+
+}) {
+
+
+  return (
+
+    <div
+      className="
+      rounded-xl
+      border
+      border-emerald-800
+      bg-black/40
+      p-5
+      text-center
+      "
+    >
+
+
+      <h3
+        className="
+        text-2xl
+        font-bold
+        text-emerald-400
+        "
+      >
+
+        {title}
+
+      </h3>
+
+
+      <p
+        className="
+        text-sm
+        text-gray-300
+        "
+      >
+
+        {text}
+
+      </p>
+
+
+    </div>
+
+  );
+
+
 }

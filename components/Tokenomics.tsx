@@ -1,81 +1,113 @@
 export default function Tokenomics() {
+
   const allocations = [
+
     {
       name: "Liquidity Pool",
       percentage: "25%",
-      amount: "250,000,000 PULSE",
-      color: "bg-blue-500",
-      purpose: "Trading liquidity and market stability at launch",
+      amount: "250,000,000 NVGAI",
+      color: "bg-cyan-500",
+      purpose:
+        "Supports decentralized exchange liquidity, trading accessibility, and launch stability.",
     },
+
+
     {
       name: "Community Launch",
       percentage: "10%",
-      amount: "100,000,000 PULSE",
-      color: "bg-green-500",
-      purpose: "Public community participation and early supporters",
+      amount: "100,000,000 NVGAI",
+      color: "bg-emerald-500",
+      purpose:
+        "Reserved for early supporters, community participation, and public access.",
     },
+
+
     {
       name: "Ecosystem Rewards",
       percentage: "35%",
-      amount: "350,000,000 PULSE",
-      color: "bg-emerald-500",
+      amount: "350,000,000 NVGAI",
+      color: "bg-green-500",
       purpose:
-        "Community rewards, campaigns, environmental programs, and future ecosystem growth",
+        "Supports community rewards, education programs, innovation initiatives, and ecosystem growth.",
     },
+
+
     {
-      name: "Team Development",
+      name: "Development",
       percentage: "10%",
-      amount: "100,000,000 PULSE",
+      amount: "100,000,000 NVGAI",
       color: "bg-purple-500",
       purpose:
-        "Core development, technology, security, and long-term project building",
+        "Used for technology development, security, maintenance, and future platform improvements.",
     },
+
+
     {
       name: "Marketing Growth",
       percentage: "10%",
-      amount: "100,000,000 PULSE",
+      amount: "100,000,000 NVGAI",
       color: "bg-pink-500",
       purpose:
-        "Marketing campaigns, partnerships, and community expansion",
+        "Supports content creation, partnerships, awareness campaigns, and community expansion.",
     },
+
+
     {
       name: "Treasury Reserve",
       percentage: "10%",
-      amount: "100,000,000 PULSE",
+      amount: "100,000,000 NVGAI",
       color: "bg-yellow-500",
       purpose:
-        "Strategic reserve, partnerships, and future ecosystem needs",
+        "Reserved for strategic opportunities, partnerships, and ecosystem development.",
     },
+
   ];
+
 
 
   const vesting = [
+
     {
-      title: "Team Development",
-      lock: "10% available at launch (10,000,000 PULSE)",
-      release: "Remaining 90% vested linearly over 24 months",
+      title: "Development",
+      lock:
+        "10% unlocked at launch",
+      release:
+        "Remaining 90% vested linearly over 24 months",
     },
+
+
     {
       title: "Marketing Growth",
-      lock: "20% available at launch (20,000,000 PULSE)",
-      release: "Remaining 80% vested linearly over 12 months",
+      lock:
+        "20% unlocked at launch",
+      release:
+        "Remaining 80% vested linearly over 12 months",
     },
+
+
     {
       title: "Ecosystem Rewards",
-      lock: "10% initial distribution available (35,000,000 PULSE)",
+      lock:
+        "Initial community distribution available",
       release:
-        "Remaining rewards released gradually through community programs and environmental initiatives",
+        "Remaining allocation released gradually through ecosystem programs",
     },
+
+
     {
       title: "Treasury Reserve",
-      lock: "Locked at launch (0% circulating)",
+      lock:
+        "Locked at launch",
       release:
-        "Released only for strategic partnerships, ecosystem expansion, and approved development needs",
+        "Used only for strategic ecosystem development",
     },
+
   ];
 
 
+
   return (
+
     <section
       id="tokenomics"
       className="
@@ -89,119 +121,141 @@ export default function Tokenomics() {
       <div className="mx-auto max-w-6xl">
 
 
-        <h2 className="
-        text-center
-        text-5xl
-        font-bold
-        text-green-400
-        ">
-          EarthPulse Tokenomics
+        <h2
+          className="
+          text-center
+          text-5xl
+          font-bold
+          text-emerald-400
+          "
+        >
+          NovaGaia Tokenomics
         </h2>
 
 
-        <p className="
-        mx-auto
-        mt-6
-        max-w-3xl
-        text-center
-        text-gray-300
-        ">
-          EarthPulse is designed with long-term sustainability,
-          transparency, and community growth at its foundation.
+
+        <p
+          className="
+          mx-auto
+          mt-6
+          max-w-3xl
+          text-center
+          text-gray-300
+          "
+        >
+          NVGAI is designed to support long-term ecosystem growth,
+          transparency, community participation, and sustainable development.
         </p>
 
 
-        {/* Supply */}
 
-        <div className="
-        mt-12
-        rounded-2xl
-        border
-        border-green-500/30
-        bg-black/50
-        p-8
-        text-center
-        ">
+        {/* Token Information */}
 
-          <h3 className="text-2xl font-bold">
-            Total Supply
-          </h3>
+        <div
+          className="
+          mt-12
+          grid
+          gap-6
+          md:grid-cols-3
+          "
+        >
 
-          <p className="
-          mt-3
-          text-4xl
-          font-bold
-          text-green-400
-          ">
-            1,000,000,000 PULSE
-          </p>
+          <InfoCard
+            title="Blockchain"
+            value="Solana"
+          />
+
+          <InfoCard
+            title="Decimals"
+            value="9"
+          />
+
+          <InfoCard
+            title="Maximum Supply"
+            value="1B NVGAI"
+          />
+
 
         </div>
 
 
 
-        {/* Allocation */}
 
-        <h3 className="
-        mt-16
-        text-3xl
-        font-bold
-        ">
+
+        <h3
+          className="
+          mt-16
+          text-3xl
+          font-bold
+          "
+        >
           Token Allocation
         </h3>
 
 
+
         <div className="mt-8 space-y-6">
 
-          {allocations.map((item) => (
+
+          {allocations.map((item)=>(
 
             <div
-            key={item.name}
-            className="
-            rounded-xl
-            bg-white/5
-            p-5
-            "
+              key={item.name}
+              className="
+              rounded-xl
+              bg-white/5
+              p-5
+              "
             >
+
 
               <div className="
               flex
               justify-between
-              ">
+              "
+              >
 
                 <h4 className="font-bold">
                   {item.name}
                 </h4>
 
-                <span className="
-                text-green-400
-                font-bold
-                ">
+
+                <span
+                  className="
+                  font-bold
+                  text-emerald-400
+                  "
+                >
                   {item.percentage}
                 </span>
 
+
               </div>
 
 
-              <div className="
-              mt-3
-              h-3
-              rounded-full
-              bg-gray-800
-              ">
 
-                <div
-                className={`
+              <div
+                className="
+                mt-3
                 h-3
                 rounded-full
-                ${item.color}
-                `}
-                style={{
-                  width:item.percentage
-                }}
+                bg-gray-800
+                "
+              >
+
+                <div
+                  className={`
+                  h-3
+                  rounded-full
+                  ${item.color}
+                  `}
+                  style={{
+                    width:item.percentage
+                  }}
                 />
 
               </div>
+
 
 
               <p className="mt-3 text-gray-300">
@@ -216,148 +270,114 @@ export default function Tokenomics() {
 
             </div>
 
+
           ))}
 
+
         </div>
 
-                {/* Vesting */}
-
-        <h3 className="
-        mt-20
-        text-3xl
-        font-bold
-        ">
-          Vesting Timeline
-        </h3>
 
 
-        <div className="
-        mt-8
-        grid
-        gap-6
-        md:grid-cols-2
-        ">
 
-        {vesting.map((item)=>(
 
-          <div
-          key={item.title}
+        {/* Vesting */}
+
+        <h3
           className="
-          rounded-xl
-          border
-          border-green-500/20
-          bg-black/40
-          p-6
+          mt-20
+          text-3xl
+          font-bold
           "
-          >
-
-            <h4 className="
-            text-xl
-            font-bold
-            text-green-400
-            ">
-              {item.title}
-            </h4>
-
-            <p className="mt-3 text-gray-300">
-              🔒 {item.lock}
-            </p>
-
-            <p className="text-gray-300">
-              📅 {item.release}
-            </p>
-
-
-          </div>
-
-        ))}
-
-        </div>
-
-
-
-        {/* Wallet Transparency */}
-
-        <div className="
-        mt-20
-        rounded-2xl
-        border
-        border-green-500/30
-        bg-black/60
-        p-8
-        ">
-
-
-        <h3 className="
-        text-3xl
-        font-bold
-        text-green-400
-        ">
-          Wallet Transparency
+        >
+          Vesting & Transparency
         </h3>
 
 
-        <p className="
-        mt-4
-        text-gray-300
-        ">
-        EarthPulse maintains publicly visible wallets
-        to ensure accountability and community trust.
-        </p>
+
+        <div
+          className="
+          mt-8
+          grid
+          gap-6
+          md:grid-cols-2
+          "
+        >
+
+          {vesting.map((item)=>(
+
+            <div
+              key={item.title}
+              className="
+              rounded-xl
+              border
+              border-emerald-500/20
+              bg-black/40
+              p-6
+              "
+            >
+
+              <h4
+                className="
+                text-xl
+                font-bold
+                text-emerald-400
+                "
+              >
+                {item.title}
+              </h4>
 
 
-        <div className="mt-6 space-y-4">
+              <p className="mt-3 text-gray-300">
+                🔒 {item.lock}
+              </p>
 
 
-          <div>
-            💧 Liquidity Wallet
-            <p className="text-gray-500">
-            Public address revealed after launch
-            </p>
-          </div>
+              <p className="text-gray-300">
+                📅 {item.release}
+              </p>
 
 
-          <div>
-            🌍 Community Launch Wallet
-            <p className="text-gray-500">
-            Supports fair community participation and early supporters
-            </p>
-          </div>
+            </div>
 
 
-          <div>
-            🛠 Development Wallet
-            <p className="text-gray-500">
-            10% available at launch, remaining tokens vested over 24 months
-            </p>
-          </div>
-
-
-          <div>
-            📢 Marketing Wallet
-            <p className="text-gray-500">
-            20% available at launch, remaining tokens vested over 12 months
-            </p>
-          </div>
-
-
-          <div>
-            🎁 Ecosystem Rewards Wallet
-            <p className="text-gray-500">
-            Supports community rewards, campaigns, and environmental programs
-            </p>
-          </div>
-
-
-          <div>
-            🏦 Treasury Wallet
-            <p className="text-gray-500">
-            Reserved for partnerships and future ecosystem expansion
-            </p>
-          </div>
+          ))}
 
 
         </div>
+
+
+
+
+
+        {/* Philosophy */}
+
+        <div
+          className="
+          mt-20
+          rounded-2xl
+          border
+          border-cyan-500/30
+          bg-black/60
+          p-8
+          "
+        >
+
+          <h3
+            className="
+            text-3xl
+            font-bold
+            text-cyan-400
+            "
+          >
+            Tokenomics Philosophy
+          </h3>
+
+
+          <p className="mt-4 text-gray-300">
+            NovaGaia focuses on transparency, community participation,
+            and long-term ecosystem growth through responsible token
+            management.
+          </p>
 
 
         </div>
@@ -366,6 +386,57 @@ export default function Tokenomics() {
 
       </div>
 
+
     </section>
+
   );
+
+}
+
+
+
+
+
+function InfoCard({
+  title,
+  value,
+}:{
+  title:string;
+  value:string;
+}){
+
+  return(
+
+    <div
+      className="
+      rounded-xl
+      border
+      border-emerald-800
+      bg-black/40
+      p-6
+      text-center
+      "
+    >
+
+      <h4 className="text-gray-400">
+        {title}
+      </h4>
+
+
+      <p
+        className="
+        mt-2
+        text-2xl
+        font-bold
+        text-emerald-400
+        "
+      >
+        {value}
+      </p>
+
+
+    </div>
+
+  );
+
 }
