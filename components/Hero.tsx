@@ -327,10 +327,10 @@ export default function Hero() {
             alt="NovaGaia Nova Mascot"
 
 
-            width={600}
+            width={700}
 
 
-            height={600}
+            height={700}
 
 
             priority
