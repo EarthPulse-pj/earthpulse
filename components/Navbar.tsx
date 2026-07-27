@@ -191,7 +191,7 @@ export default function Navbar() {
 
           >
 
-            🚀 Buy NVGAI
+            🚀 Launching Soon
 
           </a>
 
@@ -317,7 +317,7 @@ export default function Navbar() {
 
           >
 
-            🚀 Buy NVGAI
+            🚀 Launching Soon
 
           </a>
 
