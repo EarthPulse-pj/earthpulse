@@ -26,7 +26,7 @@ export default function Community() {
       description:
         "Join the NovaGaia community hub and connect with supporters worldwide.",
       button:
-        "Join Discord",
+        "Coming Soon",
       link:
         "#",
     },
@@ -38,7 +38,7 @@ export default function Community() {
       description:
         "Receive NovaGaia updates and participate in community discussions.",
       button:
-        "Join Telegram",
+        "Coming Soon",
       link:
         "#",
     },
