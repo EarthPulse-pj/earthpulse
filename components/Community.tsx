@@ -16,7 +16,7 @@ export default function Community() {
       button:
         "Follow X",
       link:
-        "https://x.com/Earthpulsemain",
+        "https://x.com/NovaGaia_NVGAI",
     },
 
 
