@@ -38,9 +38,9 @@ export default function Community() {
       description:
         "Receive NovaGaia updates and participate in community discussions.",
       button:
-        "Coming Soon",
+        "Join",
       link:
-        "#",
+        "https://t.me/NovaGaiaCommunity",
     },
 
 
