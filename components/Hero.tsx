@@ -167,7 +167,7 @@ export default function Hero() {
 
 
             <a
-              href="/NovaGaia-Whitepaper-v1.0.pdf"
+              href="/NovaGaia-Whitepaper-v1.1.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="

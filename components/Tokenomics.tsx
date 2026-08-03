@@ -1,109 +1,90 @@
 export default function Tokenomics() {
 
   const allocations = [
+  {
+    name: "Public Launch & Liquidity",
+    percentage: "60%",
+    amount: "600,000,000 NVGAI",
+    color: "bg-cyan-500",
+    purpose:
+      "Supports fair public distribution, decentralized exchange liquidity, trading accessibility, and launch stability.",
+  },
 
-    {
-      name: "Liquidity Pool",
-      percentage: "25%",
-      amount: "250,000,000 NVGAI",
-      color: "bg-cyan-500",
-      purpose:
-        "Supports decentralized exchange liquidity, trading accessibility, and launch stability.",
-    },
+  {
+    name: "Ecosystem",
+    percentage: "20%",
+    amount: "200,000,000 NVGAI",
+    color: "bg-green-500",
+    purpose:
+      "Supports community rewards, AI & blockchain education, innovation initiatives, ecosystem expansion, and future utilities.",
+  },
 
+  {
+    name: "Treasury",
+    percentage: "10%",
+    amount: "100,000,000 NVGAI",
+    color: "bg-yellow-500",
+    purpose:
+      "Reserved for strategic partnerships, ecosystem expansion, emergency funding, and community-approved initiatives.",
+  },
 
-    {
-      name: "Community Launch",
-      percentage: "10%",
-      amount: "100,000,000 NVGAI",
-      color: "bg-emerald-500",
-      purpose:
-        "Reserved for early supporters, community participation, and public access.",
-    },
+  {
+    name: "Marketing",
+    percentage: "5%",
+    amount: "50,000,000 NVGAI",
+    color: "bg-pink-500",
+    purpose:
+      "Supports content creation, partnerships, educational campaigns, brand awareness, and community growth.",
+  },
 
-
-    {
-      name: "Ecosystem Rewards",
-      percentage: "35%",
-      amount: "350,000,000 NVGAI",
-      color: "bg-green-500",
-      purpose:
-        "Supports community rewards, education programs, innovation initiatives, and ecosystem growth.",
-    },
-
-
-    {
-      name: "Development",
-      percentage: "10%",
-      amount: "100,000,000 NVGAI",
-      color: "bg-purple-500",
-      purpose:
-        "Used for technology development, security, maintenance, and future platform improvements.",
-    },
-
-
-    {
-      name: "Marketing Growth",
-      percentage: "10%",
-      amount: "100,000,000 NVGAI",
-      color: "bg-pink-500",
-      purpose:
-        "Supports content creation, partnerships, awareness campaigns, and community expansion.",
-    },
-
-
-    {
-      name: "Treasury Reserve",
-      percentage: "10%",
-      amount: "100,000,000 NVGAI",
-      color: "bg-yellow-500",
-      purpose:
-        "Reserved for strategic opportunities, partnerships, and ecosystem development.",
-    },
-
-  ];
+  {
+    name: "Team",
+    percentage: "5%",
+    amount: "50,000,000 NVGAI",
+    color: "bg-purple-500",
+    purpose:
+      "Reserved for the long-term development and maintenance of the NovaGaia ecosystem with a transparent vesting schedule.",
+  },
+];
 
 
 
   const vesting = [
+  {
+    title: "Public Launch & Liquidity",
+    lock: "100% available at launch",
+    release:
+      "Supports fair public trading, decentralized liquidity, and healthy market price discovery.",
+  },
 
-    {
-      title: "Development",
-      lock:
-        "10% unlocked at launch",
-      release:
-        "Remaining 90% vested linearly over 24 months",
-    },
+  {
+    title: "Ecosystem",
+    lock: "10% unlocked at launch",
+    release:
+      "Remaining 90% released gradually for 24 months through community rewards, educational programs, innovation initiatives, and ecosystem development.",
+  },
 
+  {
+    title: "Treasury",
+    lock: "10% unlocked at launch",
+    release:
+      "Remaining 90% reserved for strategic partnerships, ecosystem expansion, emergency funding, and future opportunities.",
+  },
 
-    {
-      title: "Marketing Growth",
-      lock:
-        "20% unlocked at launch",
-      release:
-        "Remaining 80% vested linearly over 12 months",
-    },
+  {
+    title: "Marketing",
+    lock: "10% unlocked at launch",
+    release:
+      "Remaining 90% released gradually to support awareness campaigns, partnerships, content creation, and community growth.",
+  },
 
-
-    {
-      title: "Ecosystem Rewards",
-      lock:
-        "Initial community distribution available",
-      release:
-        "Remaining allocation released gradually through ecosystem programs",
-    },
-
-
-    {
-      title: "Treasury Reserve",
-      lock:
-        "Locked at launch",
-      release:
-        "Used only for strategic ecosystem development",
-    },
-
-  ];
-
+  {
+    title: "Team",
+    lock: "Locked at launch",
+    release:
+      "Gradually vested over 24 months to demonstrate the team's long-term commitment to the NovaGaia ecosystem.",
+  },
+];
 
 
   return (
