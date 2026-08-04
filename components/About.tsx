@@ -40,49 +40,114 @@ export default function About() {
 
         {/* INTRODUCTION */}
 
-
-        <p
-          className="
-          mx-auto
-          mt-6
-          max-w-3xl
-          text-center
-          text-lg
-          leading-8
-          text-gray-300
-          sm:text-xl
-          "
-        >
-
-          NovaGaia is a community-driven ecosystem that combines
-          Artificial Intelligence, Blockchain Technology, and Collective
-          Intelligence to explore new ways of building a smarter,
-          safer, and more sustainable future.
-
-        </p>
+<p
+  className="
+  mx-auto
+  mt-6
+  max-w-3xl
+  text-center
+  text-lg
+  leading-8
+  text-gray-300
+  sm:text-xl
+  "
+>
+  NovaGaia is a community-driven ecosystem that combines
+  Artificial Intelligence, Blockchain Technology, and Collective
+  Intelligence to explore new ways of building a smarter,
+  safer, and more sustainable future.
+</p>
 
 
+{/* WHY NOVAGAIA WAS BUILT */}
+
+<div
+  className="
+  mx-auto
+  mt-12
+  max-w-4xl
+  rounded-2xl
+  border
+  border-emerald-800
+  bg-black/40
+  p-8
+  "
+>
+
+<h3
+  className="
+  text-center
+  text-3xl
+  font-bold
+  text-emerald-400
+  "
+>
+  💚 Why NovaGaia Was Built
+</h3>
 
 
+<p
+  className="
+  mt-6
+  text-center
+  leading-8
+  text-gray-300
+  "
+>
+   NovaGaia was born from real experiences in the crypto space.
+  Like many community members, Nova experienced the challenges of
+  rug pulls, scams, and failed projects that affected trust within
+  the industry.
+</p>
 
-        <p
-          className="
-          mx-auto
-          mt-6
-          max-w-4xl
-          text-center
-          leading-8
-          text-gray-400
-          "
-        >
 
-          NovaGaia is built around the belief that technology should
-          empower people. Instead of focusing on unrealistic promises,
-          NovaGaia focuses on education, innovation, transparency,
-          and community participation through Web3 culture.
+<p
+  className="
+  mt-4
+  text-center
+  leading-8
+  text-gray-300
+  "
+>
+  Nova is not here to decide which cryptocurrencies people should
+  buy or invest in. Instead, Nova aims to assist the community by
+  gathering information, identifying possible red flags and warning
+  signs, recognizing positive indicators, and encouraging deeper
+  discussions.
+</p>
 
-        </p>
 
+<p
+  className="
+  mt-4
+  text-center
+  leading-8
+  text-gray-300
+  "
+>
+  Through collaboration, community participation, and future voting
+  systems, NovaGaia believes better decisions are made together.
+</p>
+
+
+<div
+  className="
+  mt-6
+  text-center
+  text-lg
+  font-semibold
+  text-emerald-400
+  "
+>
+  🌱 Learn together.
+  <br />
+  🤝 Build together.
+  <br />
+  🚀 Grow together.
+</div>
+
+
+</div>
 
 
 
